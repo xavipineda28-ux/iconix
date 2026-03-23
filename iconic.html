@@ -1,33 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iconix- Tienda Digital</title>
-   
-    <style>
-        .image {
-            width: 200px;
-            height: auto;
-        }
-        .productos{
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-        }
-        .image2{
-            width: 200px;
-            height: auto;
-        }
-          .image3{
-            width: 200px;
-            height: auto;
-        }
-        .image4{
-            width: 200px;
-            height: auto;
-        }
-    </style>
+    <title>Iconix - Tienda Digital</title>
+
     <style>
         body {
             background-color: #F5F5DC;
@@ -36,109 +13,85 @@
             font-family: Arial, Helvetica, sans-serif;
             min-height: 100vh;
         }
+
         .titulo {
             color: #ff1493;
             text-align: center;
             font-size: 4rem;
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 10px;
-            text-shadow: -2px -2px 4px rgba(255,255,255,0.8);
             font-weight: bold;
             letter-spacing: 4px;
-            }
-        .subtitulo{
+        }
+
+        .subtitulo {
             color: #c71585;
             text-align: center;
-            font-family: 'Times New Roman', Times, serif;
             font-size: 1.8rem;
-            margin-top: 0;
             font-style: italic;
-            letter-spacing: 2px;
+        }
+
+        .productos {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        figure {
+            text-align: center;
         }
 
         figure img {
-            min-width: 40%;
-            height: auto;
+            width: 200px;
             border-radius: 15px;
-            box-shadow: 0 5px rgba(0,0,0,0.3);
         }
-        
-        figcaption{
-            margin-top: 15px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ff1493;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-        @media (max-widht: 768px) {
-            .titulo {font-size: 2.5rem;}
-            .subtitulo{ font-size: 1.3rem;}
 
+        figcaption {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            color: #c71585;
+            font-style: italic;
         }
-        .Valor{
-            color: #c71585;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 1.5rem; 
-            font-style: italic;
-             letter-spacing: 2px;  }
 
-               .valor2
-                {
-            color: #c71585;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 1.5rem; 
-            font-style: italic;
-             letter-spacing: 2px;  }
-             
-               .valor3
-                {
-            color: #c71585;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 1.5rem; 
-            font-style: italic;
-             letter-spacing: 2px;  }
-        .valor4
-                {
-            color: #c71585;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 1.5rem; 
-            font-style: italic;
-             letter-spacing: 2px;  }
+        @media (max-width: 768px) {
+            .titulo { font-size: 2.5rem; }
+            .subtitulo { font-size: 1.3rem; }
+        }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1 class="titulo">ICONIX</h1>
-        <h2 class="subtitulo">Catalogo Digital</h2>
-    </header> 
-     <figure>
-        <img src="rosa-coral.png" class="image" alt="">
-        <figcaption class="Valor">
-            
-            Valor: C$70.00
-            
-        </figcaption>
-    </figure>
+
+<header>
+    <h1 class="titulo">ICONIX</h1>
+    <h2 class="subtitulo">Catálogo Digital</h2>
+</header>
+
+<div class="productos">
+    
     <figure>
-        <img src="lavanda.png" class="image2" alt="">
-        <figcaption class="valor2"> 
-                      Valor: C$70.00
-
-        </figcaption>
+        <img src="rosa-coral.png" alt="">
+        <figcaption>Valor: C$70.00</figcaption>
     </figure>
-  <figure>
-        <img src="lazo-final.png" class="image3" alt="">
-        <figcaption class="valor3"> 
-                      Valor: C$70.00
 
-        </figcaption>
+    <figure>
+        <img src="lavanda.png" alt="">
+        <figcaption>Valor: C$70.00</figcaption>
     </figure>
-   <figure>
-        <img src="colaventas.png" class="image4" alt="">
-        <figcaption class="valor4"> 
-                      Valor: C$40.00
 
-        </figcaption>
+    <figure>
+        <img src="lazo-final.png" alt="">
+        <figcaption>Valor: C$70.00</figcaption>
     </figure>
+
+    <figure>
+        <img src="cola-morada.png" alt="">
+        <figcaption>Valor: C$40.00</figcaption>
+    </figure>
+
+</div>
+
 </body>
 </html>
